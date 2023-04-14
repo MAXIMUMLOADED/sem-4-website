@@ -1,0 +1,118 @@
+
+body{
+    font-family: Tahoma;
+    background-image: linear-gradient(to bottom right,#000000d4 50%,#ff05057e),url('https://gifdb.com/images/high/cars-red-planet-yejxeafdmlw6791w.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(255, 255, 255); /* Adds a semi-transparent white overlay */
+    filter: brightness(90%) contrast(120%) ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    width:100%;
+    height:100%;
+}
+header {
+    width: 100%;
+    height: 50px;
+    background-color: #393646;
+    display: flex;
+
+    align-items: center;
+    position: fixed;
+    top: 0;
+  }
+
+  h1 {
+    color: #f1be32;
+    font-size: min(5vw, 1.2em);
+    text-align: center;
+    padding-right: 20px;
+  }
+  nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+    font-weight: 600;
+  }
+  
+  nav > ul > li {
+    color: #dfdfe2;
+    margin: 0 0.2rem;
+    padding: 1rem;
+    display: block;
+  }
+  
+  nav > ul > li:hover {
+    background-color: #dfdfe2;
+    color: #444654;
+    cursor: pointer;
+  }
+  
+  li > a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .animated-heading {
+    font-size: 5rem;
+    animation: slide-in 2s ease-out;
+    display: block; 
+    color:#ffffff;
+    text-shadow: 5px 2px 2px rgba(244, 0, 0, 0.509);
+    text-rendering: optimizeLegibility;
+  }
+  
+  .animated-paragraph {
+    font-size: 2rem;
+    padding-top:10px;
+    color:#fefeff;
+    animation: slide-in 3s ease-out;
+  }
+  
+  @keyframes slide-in {
+    0% {
+      opacity: 0;
+      transform: translateY(-50%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+footer {
+    animation: move-text 2s linear infinite;
+    
+    text-align:center;
+    color:#ffffff;
+  }
+  
+  @keyframes move-text {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(5px, 3px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
+footer{
+    color:white;
+    text-align:center;
+}
+ 
